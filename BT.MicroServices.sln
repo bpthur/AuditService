@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{BDF1805A-322F-48DE-8CD4-CCD82943A858}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{1A9EFB1E-E704-4886-A5DC-6DEC88A99AC8}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\AuditService-WAWS-dev.json = PublishScripts\Configurations\AuditService-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.Audit", "BT.Audit\BT.Audit.csproj", "{CC6A46D5-62DD-46C3-971D-57C91409A25D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Audit Service", "Audit Service", "{2105B3DE-BC4B-4B3A-BF98-8BE5EF7B7747}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{10235BB1-55E3-42FF-A1B9-92ABD245FF40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.Audit.DomainModel.UnitTests", "Test\BT.Audit.DomainModel.UnitTests\BT.Audit.DomainModel.UnitTests.csproj", "{F58F087B-19EF-4E0C-BCA5-AEA387D80B65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.Audit.DomainModel", "BT.Audit.DomainModel\BT.Audit.DomainModel.csproj", "{B9A4597C-7ED2-4BE8-9CB4-E737D67DF904}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC6A46D5-62DD-46C3-971D-57C91409A25D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC6A46D5-62DD-46C3-971D-57C91409A25D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC6A46D5-62DD-46C3-971D-57C91409A25D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC6A46D5-62DD-46C3-971D-57C91409A25D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F58F087B-19EF-4E0C-BCA5-AEA387D80B65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F58F087B-19EF-4E0C-BCA5-AEA387D80B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F58F087B-19EF-4E0C-BCA5-AEA387D80B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F58F087B-19EF-4E0C-BCA5-AEA387D80B65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A4597C-7ED2-4BE8-9CB4-E737D67DF904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A4597C-7ED2-4BE8-9CB4-E737D67DF904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A4597C-7ED2-4BE8-9CB4-E737D67DF904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A4597C-7ED2-4BE8-9CB4-E737D67DF904}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1A9EFB1E-E704-4886-A5DC-6DEC88A99AC8} = {BDF1805A-322F-48DE-8CD4-CCD82943A858}
+		{CC6A46D5-62DD-46C3-971D-57C91409A25D} = {2105B3DE-BC4B-4B3A-BF98-8BE5EF7B7747}
+		{F58F087B-19EF-4E0C-BCA5-AEA387D80B65} = {10235BB1-55E3-42FF-A1B9-92ABD245FF40}
+		{B9A4597C-7ED2-4BE8-9CB4-E737D67DF904} = {2105B3DE-BC4B-4B3A-BF98-8BE5EF7B7747}
+	EndGlobalSection
+EndGlobal
