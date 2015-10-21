@@ -1,11 +1,11 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 
 namespace BT.Audit.DomainModel.Unittests
 {
-	[TestClass]
+	[TestFixture]
 	public class WhenUsingAudit
 	{
-		[TestMethod]
+		[Test]
 		public void DefaultConstructor_NoParams_SetsTimestamp()
 		{
 			//Arrange, Act
@@ -15,7 +15,7 @@ namespace BT.Audit.DomainModel.Unittests
 			Assert.IsNotNull(a.Timestamp);
 		}
 
-		[TestMethod]
+		[Test]
 		public void DefaultConstructor_Category_SetsCategory()
 		{
 			//Arrange
