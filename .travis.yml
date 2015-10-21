@@ -3,3 +3,6 @@ solution: BT.MicroServices.sln
 install:
   - nuget restore BT.MicroServices.sln
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release BT.MicroServices.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./BT.Audit.DomainModel.UnitTests/bin/Release/MyProject.Tests.dll
